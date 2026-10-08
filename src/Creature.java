@@ -1,11 +1,11 @@
 public class Creature {
 
+
     private String name;
     private String type;
     private int level;
     private int hp;
     private boolean isShiny;
-
 
     public Creature(String name, String type, int level, int hp, boolean isShiny) {
         this.name = name;
@@ -14,19 +14,18 @@ public class Creature {
         this.hp = hp;
         this.isShiny = isShiny;
 
-
     }
 
     public String getName() {
         return name;
 
+
     }
+
 
     public String getType() {
         return type;
     }
-
-
 
 
     public int getLevel(){
@@ -36,22 +35,17 @@ public class Creature {
         return hp;
     }
 
-
     public boolean isShiny() {
         return isShiny;
     }
-
-
 
     public void setName(String name) {
         this.name = name;
     }
 
-
     public void setType(String type) {
         this.type = type;
     }
-
 
     public void setLevel(int level){
         this.level = level;
@@ -68,9 +62,8 @@ public class Creature {
     }
 
 
+
     public void levelUp() {
-
-
 
 
         level= level+1;
@@ -82,23 +75,28 @@ public class Creature {
         hp = hp - amount;
 
 
+
+
         if (hp < 0) {
             hp = 0;
         }
+
 
     }
 
     public void attack(Creature target) {
 
-
-        target.takeDamage(10);
+       target.takeDamage(10);
 
 
     }
 
-
     @Override
     public String toString() {
+
+
+
+
 
 
         return name + "  |  " + type + "  | Level: " + level + "   | HP:  " + hp + "   | Shiny:   " + isShiny;
@@ -106,7 +104,11 @@ public class Creature {
 
     }
 
-}
 
+
+
+
+
+}
 
 
