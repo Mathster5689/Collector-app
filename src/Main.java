@@ -159,7 +159,7 @@ public static void main (String[] args) {
     System.out.println(party.getCreature(5).getHp());
 
 
-} //hello
+} // i liek mudkip
 
 
 
